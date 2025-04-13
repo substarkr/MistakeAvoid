@@ -24,7 +24,7 @@ class MyPlugin(BasePlugin):
             self.ap.logger.debug("hello, {}".format(ctx.event.sender_id))
 
             # 回复消息 "hello, <发送者id>!"
-            ctx.add_return("reply", ["hello, {}!".format(ctx.event.sender_id)])
+            ctx.add_return("reply", ["老师……？有什么吩咐吗……？"])
 
             # 阻止该事件默认行为（向接口获取回复）
             ctx.prevent_default()
@@ -39,7 +39,7 @@ class MyPlugin(BasePlugin):
             self.ap.logger.debug("hello, {}".format(ctx.event.sender_id))
 
             # 回复消息 "hello, everyone!"
-            ctx.add_return("reply", ["hello, everyone!"])
+            ctx.add_return("reply", ["老师……？有什么吩咐吗……？"])
 
             # 阻止该事件默认行为（向接口获取回复）
             ctx.prevent_default()
